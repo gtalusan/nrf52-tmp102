@@ -47,9 +47,8 @@ void loop(void)
 			tempCharacteristic.setValue(tmp102.readTempC());
 			tmp102.sleep();
 			tmp102.end();
-						then = now;
+			then = now;
 		}
-
 	}
 	else {		
 		sd_power_dcdc_mode_set(NRF_POWER_DCDC_ENABLE);
